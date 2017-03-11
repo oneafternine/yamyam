@@ -1,0 +1,96 @@
+//
+// Color Variables
+//
+
+$primary: #1ABC9C;
+$secondary: #364945;
+$tertiary: darken($primary, 5%);;
+$highlight: #542537;
+$primary-darker: darken($primary, 10%);
+$secondary-darker: darken($secondary, 10%);
+$tertiary-darker: darken($tertiary, 5%);
+$highlight-darker: darken($highlight, 10%);
+
+$orange: #D95B43;
+$orange-darker: darken($orange, 7%);
+$red: #C02942;
+$red-darker: darken($red, 7%);
+$green: #54777B;
+$green-darker: darken($green, 7%);
+$yellow: #EBD077;
+$yellow-darker: darken($yellow, 7%);
+$purple: #542537;
+$purple-darker: darken($purple, 7%);
+
+$lightest-grey: #e6e6e6;
+$lighter-grey: #ECF0F1;
+$light-grey: #ECF0F1;
+$light-grey-darker: darken($light-grey, 7%);
+$grey: #808080;
+$dark-grey: #4A4A4A;
+$darker-grey: #666666;
+$darkest-grey: #4d4d4d;
+
+$warm-grey: #DCDAD3;
+
+$white: #ffffff;
+$off-white: #F3F2ED;
+$off-white-darker: darken($off-white, 7%);
+$black: #000000;
+$off-black: #404040;
+
+
+// Background Colours
+
+.bg--off-white {
+    background-color: $off-white;
+}
+.bg--orange {
+    background-color: $orange;
+}
+.bg--orange-darker {
+    background-color: $orange-darker;
+}
+.bg--purple {
+    background-color: $purple;
+}
+.bg--yellow {
+    background-color: $yellow;
+}
+.bg--yellow-darker {
+    background-color: $yellow-darker;
+}
+.bg--green {
+    background-color: $green;
+}
+
+// Site Width
+$max-site-width: 1400px;
+
+// Breakpoint Mixins
+@mixin break($point) {
+    @if $point == desk-extra-wide {
+        @media (min-width: 1600px) { @content; }
+    }
+    @else if $point == desk-wide {
+        @media (min-width: 1400px) { @content; }
+    }
+    @else if $point == desk {
+        @media (min-width: 1000px) { @content; }
+    }
+    @else if $point == lap {
+        @media (min-width: 800px)  { @content; }
+    }
+    @else if $point == tablet {
+        @media (min-width: 500px)  { @content; }
+    }
+    @media (min-width: $point)  { @content; }
+}
+
+
+
+
+
+
+
+

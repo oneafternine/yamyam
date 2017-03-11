@@ -1,0 +1,12 @@
+///* ========================================================================
+//   #DROP SHADOW
+//   ======================================================================== */
+
+// Mixin to create drop shadow
+// You can specify spread and the opacity
+
+// Drop Shadow
+@mixin drop-shadow($spread:20px, $opacity:0.4) {
+    -webkit-box-shadow: 0 0 $spread 0 rgba(0,0,0,$opacity);
+    box-shadow: 0 0 $spread 0 rgba(0,0,0,$opacity);
+}

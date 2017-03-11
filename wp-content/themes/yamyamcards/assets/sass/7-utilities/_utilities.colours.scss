@@ -1,0 +1,41 @@
+/* ==========================================================================
+   #COLOURS
+   ========================================================================== */
+
+//
+// Force the colour change defined in the class
+//
+
+// Background colours
+.u-bg--off-white {
+    background-color: $off-white!important;
+}
+.u-bg--primary {
+    background-color: $primary!important;
+}
+.u-bg--secondary {
+    background-color: $secondary!important;
+}
+.u-bg--tertiary {
+    background-color: $tertiary!important;
+}
+
+// Text colours
+.u-text--primary {
+    color: $primary!important;
+}
+.u-text--secondary {
+    color: $secondary!important;
+}
+.u-text--tertiary {
+    color: $tertiary!important;
+}
+.u-text--white {
+    color: $white!important;
+}
+.u-text--black {
+    color: $black!important;
+}
+.u-text--grey {
+    color: $grey!important;
+}

@@ -1,0 +1,61 @@
+///* ========================================================================
+//   #COLOURS
+//   ======================================================================== */
+// The list of colour variables used globally across the project
+
+//
+// Main brand colours
+//
+$primary: #D95B43;
+$secondary: #EBD077;
+$tertiary: #54777B;
+$highlight: #542537;
+$primary-darker: darken($primary, 5%);
+$secondary-darker: darken($secondary, 5%);
+$tertiary-darker: darken($tertiary, 5%);
+$highlight-darker: darken($highlight, 5%);
+
+//
+// Brand Specific Colours
+// eg, $brand-red: #ff0000;
+
+
+
+//
+// White/Black
+//
+$white: #ffffff;
+$black: #000000;
+$off-white: #F3F2ED;
+$off-black: #404040;
+
+//
+// Greys
+//
+$grey: #808080;
+$grey--lightest: #e6e6e6;
+$grey--lighter: #ECF0F1;
+$grey--light: #ECF0F1;
+$grey--dark: #4A4A4A;
+$grey--darker: #666666;
+$grey--darkest: #4d4d4d;
+
+//
+// Warnings
+//
+$warning: #D95B43;
+$error: #C02942;
+$success: #54777B;
+
+
+//
+// Social Colours
+//
+$twitter: #00aced;
+$facebook: #3b5998;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$tumblr: #32506d;
+$instagram: #517fa4;
+$vimeo: #aad450;
+$lastfm: #D51007;

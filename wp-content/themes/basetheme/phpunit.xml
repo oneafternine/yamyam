@@ -1,0 +1,36 @@
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.3/phpunit.xsd"
+         backupGlobals="false"
+         bootstrap="./tests/includes/bootstrap.php"
+         colors="true"
+         verbose="true">
+
+    <testsuites>
+        <testsuite name="base-theme">
+          <directory suffix="Test.php" phpVersionOperator=">=">./tests/suites/basetheme</directory>
+        </testsuite>
+
+        <testsuite name="app">
+          <directory suffix="Test.php" phpVersionOperator=">=">./tests/suites/app</directory>
+        </testsuite>
+
+        <testsuite name="platypus">
+          <directory suffix="Test.php" phpVersionOperator=">=">./tests/suites/platypus</directory>
+        </testsuite>
+
+        <testsuite name="fakes">
+          <directory suffix="Test.php" phpVersionOperator=">=">./tests/suites/fakes</directory>
+        </testsuite>
+    </testsuites>
+
+    <logging>
+        <log type="coverage-html" target="../../../coverage"></log>
+    </logging>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./app</directory>
+            <directory suffix=".php">./platypus</directory>
+        </whitelist>
+    </filter>
+</phpunit>

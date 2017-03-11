@@ -1,0 +1,19 @@
+// Site Architecture
+
+html {
+    border: 6px solid $primary;
+    @include break(desk) {
+        border-width: 20px;
+    }
+}
+
+body {
+    background: $primary;
+}
+
+.content--white {
+    background: $white;
+}
+.content--green {
+    background: $primary;
+}

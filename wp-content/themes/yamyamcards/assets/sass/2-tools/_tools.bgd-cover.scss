@@ -1,0 +1,10 @@
+///* ========================================================================
+//   #BACKGROUND COVER
+//   ======================================================================== */
+
+// Covers an image within the background, positions it int he centre
+@mixin bgd-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

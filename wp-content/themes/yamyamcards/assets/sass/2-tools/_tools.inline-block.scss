@@ -1,0 +1,11 @@
+///* ========================================================================
+//   #INLINE-BLOCK
+//   ======================================================================== */
+
+// Simple mixin to display elements as inline block. You can specify vertical position and widths
+
+@mixin inline-block( $position:top, $width:auto ) {
+    display: inline-block;
+    vertical-align: $position;
+    width: $width;
+}

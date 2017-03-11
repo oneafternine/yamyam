@@ -1,0 +1,94 @@
+[
+    {
+        "name": "fzaninotto/faker",
+        "version": "v1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fzaninotto/Faker.git",
+            "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+            "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.3|^7.0"
+        },
+        "require-dev": {
+            "ext-intl": "*",
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~1.5"
+        },
+        "time": "2016-04-29 12:21:54",
+        "type": "library",
+        "extra": {
+            "branch-alias": []
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Faker\\": "src/Faker/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "François Zaninotto"
+            }
+        ],
+        "description": "Faker is a PHP library that generates fake data for you.",
+        "keywords": [
+            "data",
+            "faker",
+            "fixtures"
+        ]
+    },
+    {
+        "name": "kengos/factory_girl",
+        "version": "v0.1.0",
+        "version_normalized": "0.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kengos/FactoryGirl.git",
+            "reference": "64a546e1bcb5513f7846ce0316e3daf762ab2a45"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kengos/FactoryGirl/zipball/64a546e1bcb5513f7846ce0316e3daf762ab2a45",
+            "reference": "64a546e1bcb5513f7846ce0316e3daf762ab2a45",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2013-03-17 08:21:39",
+        "type": "application",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "FactoryGirl": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kengo Suzuki",
+                "email": "kengo@kengos.jp"
+            }
+        ],
+        "description": "fixtures replacement tool for Yii framework",
+        "homepage": "https://github.com/kengos/FactoryGirl",
+        "keywords": [
+            "test fixture"
+        ]
+    }
+]

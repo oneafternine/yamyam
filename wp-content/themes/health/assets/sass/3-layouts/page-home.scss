@@ -1,0 +1,236 @@
+// Homepage
+
+// Big Buttons
+
+.big-info {
+    text-align: center;
+    h3 {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1.125em;
+    }
+    .intro {
+        color: $red;
+        font-weight: 700;
+        font-size: 1.25em;
+    }
+    .big-info-item {
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    .inner {
+        @include break(lap) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include break(desk) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+.big-circle-shadow {
+    $dim: 160px;
+    border-radius: $dim/2;
+    width: $dim; height: $dim;
+    margin: 0 auto 10px;
+    background-color: $orange-darker;
+    .big-circle {
+        border-radius: $dim/2;
+        display: block;
+        width: $dim; height: $dim;
+        background-color: $orange;
+        position: relative;
+        top: -8px;
+        @include transition(all 100ms $ease-in-cubic);
+        &:active {
+            top: 0;
+        }
+    }
+    &.green {
+        background-color: $green-darker;
+        .big-circle {
+            background-color: $green;
+        }
+    }
+    &.yellow {
+        background-color: $yellow-darker;
+        .big-circle {
+            background-color: $yellow;
+        }
+    }
+}
+
+.outline-icon {
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center center;
+    &.play {
+        background-image: url('../img/icon-play.svg');
+    }
+    &.list {
+        background-image: url('../img/icon-list.svg');
+    }
+    &.comments {
+        background-image: url('../img/icon-comments.svg');
+    }
+}
+
+
+// ---------
+// Content
+// ---------
+
+.row-title {
+    margin-bottom: 30px;
+    color: $red;
+    font-weight: 500;
+}
+
+// Testimonials
+
+.testimonials-wrapper {
+    position: relative;
+    blockquote {
+        border-left: 0;
+        padding: 0;
+        font-size: 1.25em;
+        line-height: 1.5em;
+        font-weight: 700;
+    }
+    .quote-credit {
+        color: $purple;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+}
+
+.cycle-slideshow {
+    > div {
+        width: 100%;
+    }
+}
+
+.cycle-nav-wrapper {
+    margin-bottom: 30px;
+}
+
+.cycle-nav {
+    .fa {
+        font-size: 4em;
+        color: $off-white-darker;
+        margin: 0 10px 0 10px;
+        @include transition(all 250ms $ease-in-cubic);
+        &:hover {
+            color: darken($warm-grey, 7%);
+        }
+    }
+    @include break(desk) {
+        position: absolute;
+        top: 20%;
+        margin-top: -35px;
+        &:active {
+            position: absolute;
+            top: 20%;
+            margin-top: -35px;
+        }
+        .fa {
+            font-size: 10em;
+        }
+        &.prev {
+            left: 0;
+        }
+        &.next {
+            right: 0;
+        }
+    }
+}
+
+// Client Block
+
+.client-block {
+    border-top: 1px solid $warm-grey;
+    padding-top: 30px;
+    overflow: auto;
+    margin-bottom: 0;
+}
+
+.client-block-title {
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: center;
+    @include break(desk) {
+        width: 22%;
+        text-align: left;
+        float: left;
+        vertical-align: middle;
+    }
+}
+
+.client-list {
+    margin: 0 0 20px 0;
+    li {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        vertical-align: middle;
+        width: 49%;
+        text-align: left;
+        .inner {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    @include break(lap) {
+        li {
+            width: 32%;
+            text-align: center;
+        }
+    }
+    @include break(desk) {
+        width: 70%;
+        float: right;
+        text-align: left;
+        vertical-align: middle;
+    }
+}
+
+// Costs Block
+
+.title-banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h2 {
+        color: $white;
+        margin-bottom: 0;
+    }
+}
+
+.cost-box {
+    color: $white;
+}
+
+.cost {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cost-item {
+    margin-bottom: 40px;
+    h3 {
+        color: $white;
+        margin-bottom: 20px;
+        span {
+            border-bottom: 4px solid $white;
+        }
+    }
+    .inner {
+        padding-right: 30px;
+    }
+}

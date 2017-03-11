@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #CONTAINER
+   ========================================================================== */
+
+// Add a class of container to any element you want to limit to the site width
+// It also includes padding to left at right at mobile
+
+.o-container {
+    margin: 0 2%;
+    max-width: $max-site-width;
+    @include mq($max-site-width + 80px) {
+        margin: 0 auto;
+    }
+}

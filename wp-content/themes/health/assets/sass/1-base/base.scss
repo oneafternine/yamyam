@@ -1,0 +1,44 @@
+
+/*
+** Template Styles - Common Styles/Elements
+*/
+
+
+// Default Navigation
+.nav {
+	padding-left: 0;
+	margin-left: 0;
+	li {
+		display: inline-block;
+		list-style: none;
+		margin: 0 4px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&.stacked {
+		li {
+			display: block;
+			margin: 0;
+		}
+	}
+}
+
+// Responsive Videos
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	iframe {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+

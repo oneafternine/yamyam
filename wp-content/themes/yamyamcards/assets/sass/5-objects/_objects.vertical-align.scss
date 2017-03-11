@@ -1,0 +1,24 @@
+///* ========================================================================
+//   #VETICAL ALIGN
+//   ======================================================================== */
+
+// Mixin to position elements vertically in the centre
+// This uses a sudo element before the element to vertically align it to the middle
+// Can position titles etc without using absolute position while accommodating varying title lengths etc
+
+.o-vertical-align-wrapper {
+    height: 100%;
+    &:before {
+        content: '';
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+        zoom: 1;
+        margin-left: -0.25em;
+    }
+    .o-vertical-align {
+        width: 99%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,151 @@
+//
+// Layout
+//
+
+
+// Base
+html, body {
+    height: 100%;
+    min-width: 300px;
+}
+
+// Container - Controls site widths and padding left and right
+.container {
+    margin: 0 2%;
+    max-width: $max-site-width;
+    @include break($max-site-width + 80px) {
+        margin: 0 auto;
+    }
+}
+// Row - Controls padding top and bottom
+.row {
+    @include padding(3% 0);
+}
+
+// Max widths
+$widths: 400, 500, 600, 700, 800, 900, 1000;
+@each $width in $widths {
+    .max-#{$width} {
+        max-width: $width + px;
+    }
+}
+.block-centred {
+    @include margin(null auto);
+}
+
+
+// Put left and right
+.row {
+    @include padding(2% 0);
+    .put-left, .put-right {
+        @include inline-block(middle, 50%);
+    }
+    &.put_lap {
+        .put-left, .put-right {
+            @include inline-block(middle, 100%);
+        }
+        @include break(lap) {
+            .put-left, .put-right {
+                @include inline-block(middle, 50%);
+            }
+        }
+    }
+    &.put_desk {
+        .put-left, .put-right {
+            @include inline-block(middle, 100%);
+        }
+        @include break(desk) {
+            .put-left, .put-right {
+                @include inline-block(middle, 50%);
+            }
+        }
+    }
+}
+
+// Floats
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+// Margins
+$positions: top, right, bottom, left;
+@each $position in $positions {
+    .margin-#{$position} {
+        margin-#{$position}: 3%;
+    }
+}
+
+// Padding
+$positions: top, right, bottom, left;
+@each $position in $positions {
+    .padding-#{$position} {
+        padding-#{$position}: 3%;
+    }
+}
+
+// Borders
+$positions: top, right, bottom, left;
+@each $position in $positions {
+    .border-#{$position} {
+        border-#{$position}: 1px solid $grey;
+    }
+}
+
+// Hide on Desktop/Mobile
+$breaks: tablet, lap, desk, desk-wide;
+@each $break in $breaks {
+    .hide-#{$break} {
+       display: block;
+       @include break($break) {
+          display: none;
+       }
+    }
+}
+$breaks: tablet, lap, desk, desk-wide;
+@each $break in $breaks {
+    .show-#{$break} {
+       display: none;
+       @include break($break) {
+          display: block;
+       }
+    }
+}
+
+// Media Block
+@mixin media-block ($margin-right: 20px) {
+    .media-body {
+        overflow: hidden;
+        _overflow: visible;
+        zoom: 1;
+    }
+    .media-block {
+        float: left;
+        margin-right: $margin-right;
+    }
+}
+
+.media {
+    @include clearfix;
+    @include media-block;
+}
+
+.media-at-lap {
+    @include break(lap) {
+        @include media-block;
+    }
+}
+
+.media-at-desk {
+    @include break(desk) {
+        @include media-block;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,58 @@
+// Main Nav
+
+.nav-container {
+    display: none;
+    height: $header-height-desktop;
+    padding-top: 40px;
+    .nav {
+        text-align: center;
+        margin-bottom: 0;
+        a {
+            text-transform: uppercase;
+            @extend.ff-bold;
+        }
+    }
+    @include break(desk) {
+        display: block;
+    }
+    @include break(desk-wide) {
+        padding-top: 32px;
+    }
+}
+
+.main-nav {
+    margin-bottom: 10px;
+    a {
+        font-size: rem(16px);
+        color: $dark-grey;
+        display: inline;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            background: none;
+            color: $black;
+            border-color: $black;
+        }
+    }
+    @include break(desk-wide) {
+        margin-bottom: 14px;
+        li {
+            @include margin(null 20px null 20px);
+            font-size: rem(20px);
+        }
+    }
+}
+
+.secondary-nav {
+    a {
+        color: $grey;
+        font-size: rem(14px);
+        &:hover {
+            color: $black;
+        }
+    }
+    @include break(desk-wide) {
+        li {
+            @include margin(null 14px null 14px);
+        }
+    }
+}

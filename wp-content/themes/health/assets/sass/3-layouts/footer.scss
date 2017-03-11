@@ -1,0 +1,45 @@
+//
+// Footer
+//
+
+#site-footer {
+    background: $primary;
+    text-align: center;
+    color: $white;
+    @include padding(2% null 5%);
+    .logo {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    a {
+        color: $white;
+    }
+    @include break(lap) {
+        text-align: left;
+        .logo {
+            @include inline-block(middle, 19%);
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer-left, .footer-right {
+    a {
+        @extend .ff-bold;
+        text-decoration: none;
+        &:hover {
+            border-color: $white;
+        }
+    }
+    @include break(lap) {
+        @include inline-block(middle, 40%)
+    }
+}
+
+.footer-right {
+    text-align: right;
+    a {
+        margin-right: 10px;
+        @include border-hover;
+    }
+}

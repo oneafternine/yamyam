@@ -1,0 +1,18 @@
+///* ========================================================================
+//   #CIRCLES
+//   ======================================================================== */
+
+// Mixin to create circles
+
+@mixin circle ($dim: 50px) {
+    color: $black;
+    display: inline-block;
+    width: $dim; height: $dim;
+    border-radius: $dim/2;
+    border: 1px solid $black;
+    text-align: center;
+    .fa {
+        font-size: 1.25rem;
+        line-height: $dim - 4;
+    }
+}

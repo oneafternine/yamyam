@@ -1,0 +1,63 @@
+//
+// Typography - Primary
+//
+
+
+// Font Face
+
+.ff-bold, .ff-reg, .ff-light, .ff-thin, .ff-med, .ff-semi-bold {
+    font-family: 'Neuzeit Office W01', helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+.ff-thin {
+    font-weight: 100;
+}
+.ff-light{
+    font-weight: 300;
+}
+.ff-reg {
+    font-weight: 400;
+}
+.ff-med {
+    font-weight: 500;
+}
+.ff-semi-bold {
+    font-weight: 600;
+}
+.ff-bold {
+    font-weight: 700;
+}
+.ff-italic {
+    font-style: italic;
+}
+
+
+// Primary
+
+* {
+    -webkit-font-smoothing: antialiased
+}
+
+html, body {
+    @extend .ff-reg;
+    color: $secondary;
+    font-size: rem(16px);
+    @include break(lap) {
+        font-size: rem(17px);
+    }
+    @include break(desk) {
+        font-size: rem(18px);
+    }
+}
+
+
+
+
+
+
+
+

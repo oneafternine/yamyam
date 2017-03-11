@@ -1,0 +1,43 @@
+//
+// Single Page
+//
+
+
+.article-main {
+    margin-bottom: 10%;
+    .body-copy {
+        margin-bottom: 10%;
+    }
+    .img-container {
+        margin-bottom: 5%;
+    }
+    .intro {
+        @include break(desk) {
+            font-size: rem(26px);
+        }
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 1em;
+        margin-bottom: 0.75em;
+    }
+}
+.article-footer {
+    margin-bottom: 10%;
+    .back {
+        @include border-hover($secondary);
+        font-size: rem(24px);
+        text-decoration: none;
+    }
+    @include break(desk) {
+        .back {
+            font-size: rem(40px);
+        }
+    }
+    @include break(desk-wide) {
+        .back {
+            font-size: rem(50px);
+        }
+    }
+}
+
+

@@ -1,0 +1,103 @@
+///* ========================================================================
+//   #FONT FILES
+//   ======================================================================== */
+
+// Add your font-face links to fonts here
+
+@font-face {
+  font-family: 'Canela Web';
+  src: url('../fonts/Canela-BoldItalic-Web.eot');
+  src: url('../fonts/Canela-BoldItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Canela-BoldItalic-Web.woff2') format('woff2'),
+       url('../fonts/Canela-BoldItalic-Web.woff') format('woff');
+  font-weight:  900;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Canela Web';
+  src: url('../fonts/Canela-Bold-Web.eot');
+  src: url('../fonts/Canela-Bold-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Canela-Bold-Web.woff2') format('woff2'),
+       url('../fonts/Canela-Bold-Web.woff') format('woff');
+  font-weight:  900;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Canela Web';
+  src: url('../fonts/Canela-MediumItalic-Web.eot');
+  src: url('../fonts/Canela-MediumItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Canela-MediumItalic-Web.woff2') format('woff2'),
+       url('../fonts/Canela-MediumItalic-Web.woff') format('woff');
+  font-weight:  700;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Canela Web';
+  src: url('../fonts/Canela-Medium-Web.eot');
+  src: url('../fonts/Canela-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Canela-Medium-Web.woff2') format('woff2'),
+       url('../fonts/Canela-Medium-Web.woff') format('woff');
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Canela Web';
+  src: url('../fonts/Canela-LightItalic-Web.eot');
+  src: url('../fonts/Canela-LightItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Canela-LightItalic-Web.woff2') format('woff2'),
+       url('../fonts/Canela-LightItalic-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Canela Web';
+  src: url('../fonts/Canela-Light-Web.eot');
+  src: url('../fonts/Canela-Light-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Canela-Light-Web.woff2') format('woff2'),
+       url('../fonts/Canela-Light-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+    font-family:'Italian Plate No2';
+    src:    url('../fonts/ItalianPlateNo2-Extralight.eot');
+    src:    url('../fonts/ItalianPlateNo2-Extralight.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/ItalianPlateNo2-Extralight.woff2') format('woff2'),
+            url('../fonts/ItalianPlateNo2-Extralight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Italian Plate No2';
+    src:    url('../fonts/ItalianPlateNo2-Medium.eot');
+    src:    url('../fonts/ItalianPlateNo2-Medium.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/ItalianPlateNo2-Medium.woff2') format('woff2'),
+            url('../fonts/ItalianPlateNo2-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Italian Plate No2';
+    src:    url('../fonts/ItalianPlateNo2-Bold.eot');
+    src:    url('../fonts/ItalianPlateNo2-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/ItalianPlateNo2-Bold.woff2') format('woff2'),
+            url('../fonts/ItalianPlateNo2-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+

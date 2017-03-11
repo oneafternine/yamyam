@@ -1,0 +1,14 @@
+///* ========================================================================
+//   #BLUR
+//   ======================================================================== */
+
+// Mixin to create css blur
+// You can specify blur distance
+
+@mixin blur($blur:5px) {
+  -webkit-filter: blur($blur);
+  -moz-filter: blur($blur);
+  -o-filter: blur($blur);
+  -ms-filter: blur($blur);
+  filter: blur($blur);
+}

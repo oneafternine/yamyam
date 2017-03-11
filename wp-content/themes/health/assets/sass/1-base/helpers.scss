@@ -1,0 +1,129 @@
+//
+// Helpers
+//
+
+
+// Box Sizing
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+// Micro Clear
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+
+// Inline Block
+.ib {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+@mixin inline-block( $position:top, $width:auto ) {
+    display: inline-block;
+    vertical-align: $position;
+    width: $width;
+}
+
+// Plain List
+.clear-list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    > li {
+        list-style: none;
+    }
+}
+
+// Circles
+@mixin circle ($dim: 50px) {
+    color: $white;
+    display: inline-block;
+    width: $dim; height: $dim;
+    -moz-border-radius: $dim/2;
+    -webkit-border-radius: $dim/2;
+    -khtml-border-radius: $dim/2;
+    border-radius: $dim/2;
+    border: 2px solid $white;
+    background: $red;
+    text-align: center;
+    line-height: $dim;
+    @extend .ff-bold;
+    .fa {
+        font-size: 1.25rem;
+        line-height: $dim - 4;
+    }
+    &.white {
+        color: $white;
+        border-color: $white;
+    }
+}
+
+// Text Shadow
+@mixin text-shadow($blur:10px, $opacity:0.4) {
+    text-shadow: 0 0 $blur rgba(0, 0, 0, $opacity);
+}
+
+// Drop Shadow
+@mixin drop-shadow($spread:20px, $opacity:0.4) {
+    -webkit-box-shadow: 0 0 $spread 0 rgba(0,0,0,$opacity);
+    box-shadow: 0 0 $spread 0 rgba(0,0,0,$opacity);
+}
+
+// Blur
+@mixin blur($blur:5px) {
+    -webkit-filter: blur($blur);
+    -moz-filter: blur($blur);
+    -o-filter: blur($blur);
+    -ms-filter: blur($blur);
+    filter: blur($blur);
+}
+
+// Vertical Align
+.v-align-wrapper {
+    height: 100%;
+    &:before {
+        content: '';
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+        zoom: 1;
+        margin-left: -0.25em;
+    }
+    .v-align {
+        width: 99%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+//Background-Cover
+.bgd-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// Inline Block
+@mixin inline-block( $position:top, $width:auto ) {
+    display: inline-block;
+    vertical-align: $position;
+    width: $width;
+}
+
+
+
+
+
+
+
+
