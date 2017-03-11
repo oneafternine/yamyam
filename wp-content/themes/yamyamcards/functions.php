@@ -105,7 +105,7 @@ add_action( 'widgets_init', 'yamyamcards_widgets_init' );
  * Enqueue scripts and styles.
  */
 function yamyamcards_scripts() {
-	wp_enqueue_style( 'yamyamcards-style', get_template_directory_uri() . '/assets/css/style.css' );
+	wp_enqueue_style( 'yamyamcards-style', get_template_directory_uri() . '/assets/css/style.css', array(), '');
 
 	wp_enqueue_script( 'yamyamcards-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
