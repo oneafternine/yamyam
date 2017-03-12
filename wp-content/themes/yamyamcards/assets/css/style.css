@@ -5214,6 +5214,72 @@ h6 {
   line-height: 1.5; }
 
 /* ==========================================================================
+   #IMAGES
+   ========================================================================== */
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+img {
+  max-width: 100%;
+  /* [1] */
+  font-style: italic;
+  /* [2] */
+  vertical-align: middle;
+  /* [3] */ }
+
+/**
+ * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ *    not make the image fluid.
+ */
+img[width],
+img[height] {
+  /* [1] */
+  max-width: none; }
+
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+/**
+ * Simple page-level setup.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ */
+html {
+  font-size: 1em;
+  /* [1] */
+  line-height: 1.5;
+  /* [1] */
+  overflow-y: scroll;
+  /* [2] */
+  min-height: 100%;
+  /* [3] */
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important; }
+
+/* ==========================================================================
+   #TABLES
+   ========================================================================== */
+/**
+ * 1. Ensure tables fill up as much space as possible.
+ */
+table {
+  width: 100%;
+  /* [1] */ }
+
+/* ==========================================================================
    #TEXT ELEMENTS
    ========================================================================== */
 p {
@@ -6253,7 +6319,35 @@ figcaption {
    #MOBILE MENU
    ========================================================================== */
 .c-mobile-menu-container {
-  background: turquoise; }
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  background: #D95B43;
+  color: #ffffff;
+  max-height: 0;
+  overflow: hidden; }
+  .c-mobile-menu-container.active {
+    max-height: 400px; }
+  .c-mobile-menu-container a {
+    color: #ffffff; }
+
+/* ==========================================================================
+   #MAIN MENU
+   ========================================================================== */
+.c-main-menu {
+  display: none; }
+  @media (min-width: 46.25em) {
+    .c-main-menu {
+      display: inline-block; } }
+
+/* ==========================================================================
+   #HEADER
+   ========================================================================== */
+@media (min-width: 46.25em) {
+  .c-menu-trigger {
+    display: none; } }
 
 /* ==========================================================================
    #CLEARFIX

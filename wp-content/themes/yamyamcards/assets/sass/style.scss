@@ -38,6 +38,9 @@
 // Elements --- Unclasses HTML elements (e.g. `h2`, `ul`).
 @import "4-elements/elements.forms";
 @import "4-elements/elements.headings";
+@import "4-elements/elements.images";
+@import "4-elements/elements.page";
+@import "4-elements/elements.tables";
 @import "4-elements/elements.text";
 
 
@@ -68,7 +71,9 @@
 //
 // Components --- Your designed UI elements
 @import "6-components/components.buttons";
-@import "6-components/components.mobile-menu";
+@import "6-components/components.menu--mobile";
+@import "6-components/components.menu--main";
+@import "6-components/components.header";
 
 
 //

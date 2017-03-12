@@ -23,14 +23,20 @@
 	<header class="site-header">
         <div class="c-mobile-menu-container">
             <div class="o-container">
-                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+                <nav class="c-mobile-menu">
+                    <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+                </nav>
             </div>
         </div>
-        <a class="mailto" href="javascript:;">hello__AT__yamyamcards__DOT__co.uk</a>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'yamyamcards' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+        <div class="header-left">
+            <h1>Yam Yam Cards</h1>
+        </div>
+        <div class="header-right">
+            <a class="c-menu-trigger" href="javascript:;"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
+            <nav class="c-main-menu" role="navigation">
+                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+            </nav><!-- #site-navigation -->
+        </div>
 	</header><!-- #masthead -->
 
 	<main id="content" class="site-content">

@@ -105,13 +105,19 @@ add_action( 'widgets_init', 'yamyamcards_widgets_init' );
  * Enqueue scripts and styles.
  */
 function yamyamcards_scripts() {
-	wp_enqueue_style( 'yamyamcards-style', get_template_directory_uri() . '/assets/css/style.css', array(), '');
 
+    // Montserrat
+    wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+    // Main CSS
+	wp_enqueue_style( 'yamyamcards-style', get_template_directory_uri() . '/assets/css/style.css', [], uniqid(), 'all');
+
+    // Navigation JS
 	wp_enqueue_script( 'yamyamcards-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
-
-    wp_enqueue_script( 'yamyamcards-main', get_template_directory_uri() . '/assets/js/main.js' );
-
+    // Focus Fix
 	wp_enqueue_script( 'yamyamcards-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
+    // Main JS
+    wp_enqueue_script( 'yamyamcards-main', get_template_directory_uri() . '/assets/js/main.js', [], uniqid(), 'all');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

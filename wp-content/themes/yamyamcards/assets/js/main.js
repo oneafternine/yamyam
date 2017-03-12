@@ -21,9 +21,9 @@ jQuery(function($){
     $('a.mailto').each(function() { mailto(this);});
 
     // Mobile Menu Trigger
-    $('.menu-trigger, .close-menu a').on('click', function(event){
-        $('body').toggleClass('no-scroll');
-        $('.mobile-menu-container').toggleClass('active');
+    $('.c-menu-trigger, .close-menu a').on('click', function(event){
+        // $('body').toggleClass('no-scroll');
+        $('.c-mobile-menu-container').toggleClass('active');
         event.preventDefault();
     });
 

@@ -3,5 +3,16 @@
    ========================================================================== */
 
 .c-mobile-menu-container {
-    background: turquoise;
+    @include transition;
+    background: $primary;
+    color: $white;
+    max-height: 0;
+    overflow: hidden;
+    &.active {
+        max-height: 400px;
+    }
+    a {
+        color: $white;
+    }
 }
+
