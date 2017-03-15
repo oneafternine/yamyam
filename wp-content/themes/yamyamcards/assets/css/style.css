@@ -6366,7 +6366,9 @@ figcaption {
   padding-bottom: 5%; }
   @media (min-width: 46.25em) {
     .c-site-header {
-      background-size: 100px auto; } }
+      background-size: 100px auto;
+      padding-top: 3%;
+      padding-bottom: 3%; } }
   @media (min-width: 61.25em) {
     .c-site-header {
       background-size: 160px auto; } }

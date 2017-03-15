@@ -12,6 +12,8 @@
     padding-bottom: 5%;
     @include mq(tablet) {
         background-size: 100px auto;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
     @include mq(desktop) {
         background-size: 160px auto;
