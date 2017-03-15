@@ -4,7 +4,7 @@
 
 .c-mobile-menu-container {
     @include transition;
-    background: $primary;
+    background: $pink;
     color: $white;
     max-height: 0;
     overflow: hidden;
@@ -13,6 +13,64 @@
     }
     a {
         color: $white;
+    }
+    @include mq(tablet) {
+        display: none;
+    }
+}
+
+.c-menu--mobile {
+    text-align: center;
+}
+
+// Primary and secondary mobile menu styles
+.c-menu--mobile__primary, .c-menu--mobile__secondary {
+    list-style: none;
+    a {
+        @include font-bold;
+        text-decoration: none;
+        &:hover {
+            color: fade-out($black, 0.6);
+        }
+    }
+}
+
+// Primary mobile menu styles
+.c-menu--mobile__primary {
+    li {
+        margin-bottom: 1.5em;
+    }
+    a {
+        font-size: 1.25rem;
+    }
+}
+
+// secondary mobile menu styles
+.c-menu--mobile__secondary {
+    li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    a {
+        color: fade-out($black, 0.5);
+        &:hover {
+            color: fade-out($black, 0.2);
+        }
+    }
+}
+
+
+// Close button
+.c-close-menu {
+    text-align: right;
+    margin: 0;
+    a {
+        @include font-bold;
+        text-decoration: none;
+        &:hover {
+            color: fade-out($black, 0.6);
+        }
     }
 }
 

@@ -1,64 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Canela Web';
-  src: url("../fonts/Canela-BoldItalic-Web.eot");
-  src: url("../fonts/Canela-BoldItalic-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Canela-BoldItalic-Web.woff2") format("woff2"), url("../fonts/Canela-BoldItalic-Web.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-  font-stretch: normal; }
-@font-face {
-  font-family: 'Canela Web';
-  src: url("../fonts/Canela-Bold-Web.eot");
-  src: url("../fonts/Canela-Bold-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Canela-Bold-Web.woff2") format("woff2"), url("../fonts/Canela-Bold-Web.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-stretch: normal; }
-@font-face {
-  font-family: 'Canela Web';
-  src: url("../fonts/Canela-MediumItalic-Web.eot");
-  src: url("../fonts/Canela-MediumItalic-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Canela-MediumItalic-Web.woff2") format("woff2"), url("../fonts/Canela-MediumItalic-Web.woff") format("woff");
-  font-weight: 700;
-  font-style: italic;
-  font-stretch: normal; }
-@font-face {
-  font-family: 'Canela Web';
-  src: url("../fonts/Canela-Medium-Web.eot");
-  src: url("../fonts/Canela-Medium-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Canela-Medium-Web.woff2") format("woff2"), url("../fonts/Canela-Medium-Web.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal; }
-@font-face {
-  font-family: 'Canela Web';
-  src: url("../fonts/Canela-LightItalic-Web.eot");
-  src: url("../fonts/Canela-LightItalic-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Canela-LightItalic-Web.woff2") format("woff2"), url("../fonts/Canela-LightItalic-Web.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
-  font-stretch: normal; }
-@font-face {
-  font-family: 'Canela Web';
-  src: url("../fonts/Canela-Light-Web.eot");
-  src: url("../fonts/Canela-Light-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Canela-Light-Web.woff2") format("woff2"), url("../fonts/Canela-Light-Web.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal; }
-@font-face {
-  font-family: 'Italian Plate No2';
-  src: url("../fonts/ItalianPlateNo2-Extralight.eot");
-  src: url("../fonts/ItalianPlateNo2-Extralight.eot?#iefix") format("embedded-opentype"), url("../fonts/ItalianPlateNo2-Extralight.woff2") format("woff2"), url("../fonts/ItalianPlateNo2-Extralight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: 'Italian Plate No2';
-  src: url("../fonts/ItalianPlateNo2-Medium.eot");
-  src: url("../fonts/ItalianPlateNo2-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/ItalianPlateNo2-Medium.woff2") format("woff2"), url("../fonts/ItalianPlateNo2-Medium.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Italian Plate No2';
-  src: url("../fonts/ItalianPlateNo2-Bold.eot");
-  src: url("../fonts/ItalianPlateNo2-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ItalianPlateNo2-Bold.woff2") format("woff2"), url("../fonts/ItalianPlateNo2-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal; }
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.1
@@ -6324,7 +6264,7 @@ figcaption {
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  background: #D95B43;
+  background: #FA2985;
   color: #ffffff;
   max-height: 0;
   overflow: hidden; }
@@ -6332,6 +6272,43 @@ figcaption {
     max-height: 400px; }
   .c-mobile-menu-container a {
     color: #ffffff; }
+  @media (min-width: 46.25em) {
+    .c-mobile-menu-container {
+      display: none; } }
+
+.c-menu--mobile {
+  text-align: center; }
+
+.c-menu--mobile__primary, .c-menu--mobile__secondary {
+  list-style: none; }
+  .c-menu--mobile__primary a, .c-menu--mobile__secondary a {
+    font-weight: 700;
+    text-decoration: none; }
+    .c-menu--mobile__primary a:hover, .c-menu--mobile__secondary a:hover {
+      color: rgba(0, 0, 0, 0.4); }
+
+.c-menu--mobile__primary li {
+  margin-bottom: 1.5em; }
+.c-menu--mobile__primary a {
+  font-size: 1.25rem; }
+
+.c-menu--mobile__secondary li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px; }
+.c-menu--mobile__secondary a {
+  color: rgba(0, 0, 0, 0.5); }
+  .c-menu--mobile__secondary a:hover {
+    color: rgba(0, 0, 0, 0.8); }
+
+.c-close-menu {
+  text-align: right;
+  margin: 0; }
+  .c-close-menu a {
+    font-weight: 700;
+    text-decoration: none; }
+    .c-close-menu a:hover {
+      color: rgba(0, 0, 0, 0.4); }
 
 /* ==========================================================================
    #MAIN MENU
@@ -6342,12 +6319,88 @@ figcaption {
     .c-main-menu {
       display: inline-block; } }
 
+.c-menu-primary li, .c-menu-secondary li {
+  display: inline-block; }
+.c-menu-primary a, .c-menu-secondary a {
+  font-weight: 700;
+  text-decoration: none; }
+  .c-menu-primary a:hover, .c-menu-secondary a:hover {
+    color: rgba(0, 0, 0, 0.4); }
+
+.c-menu-primary {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .c-menu-primary li {
+    margin-left: 20px;
+    margin-bottom: 0; }
+  .c-menu-primary a {
+    color: #ffffff;
+    font-size: 1.25rem;
+    text-transform: lowercase; }
+  @media (min-width: 61.25em) {
+    .c-menu-primary a {
+      font-size: 1.5rem; } }
+
+.c-menu-secondary {
+  margin-top: 10px;
+  margin-bottom: 0; }
+  .c-menu-secondary li {
+    margin-bottom: 0;
+    margin-left: 10px; }
+  .c-menu-secondary a {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.85rem; }
+    .c-menu-secondary a:hover {
+      color: rgba(0, 0, 0, 0.8); }
+
 /* ==========================================================================
    #HEADER
    ========================================================================== */
-@media (min-width: 46.25em) {
-  .c-menu-trigger {
-    display: none; } }
+.c-site-header {
+  background-color: #69D0CA;
+  background-image: url("../images/header_logo2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  @media (min-width: 46.25em) {
+    .c-site-header {
+      background-size: 100px auto; } }
+  @media (min-width: 61.25em) {
+    .c-site-header {
+      background-size: 160px auto; } }
+
+.c-menu-trigger {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700; }
+  .c-menu-trigger:hover {
+    color: rgba(0, 0, 0, 0.4); }
+  @media (min-width: 46.25em) {
+    .c-menu-trigger {
+      display: none; } }
+
+.c-header__title {
+  color: #ffffff;
+  margin-bottom: 0;
+  text-transform: lowercase; }
+  .c-header__title a {
+    color: #ffffff; }
+  @media (max-width: 46.24em) {
+    .c-header__title {
+      font-size: 1.5rem; } }
+  @media (min-width: 61.25em) {
+    .c-header__title {
+      font-size: 3.5rem; } }
+
+.c-header-left, .c-header-right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%; }
+
+.c-header-right {
+  text-align: right; }
 
 /* ==========================================================================
    #CLEARFIX

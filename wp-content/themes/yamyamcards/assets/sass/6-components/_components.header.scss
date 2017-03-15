@@ -2,8 +2,54 @@
    #HEADER
    ========================================================================== */
 
+.c-site-header {
+    background-color: $teal;
+    background-image: url('../images/header_logo2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    @include mq(tablet) {
+        background-size: 100px auto;
+    }
+    @include mq(desktop) {
+        background-size: 160px auto;
+    }
+}
+
 .c-menu-trigger {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        color: fade-out($black, 0.6);
+    }
+    @include font-bold;
     @include mq(tablet) {
         display: none;
     }
+}
+
+.c-header__title {
+    color: $white;
+    margin-bottom: 0;
+    text-transform: lowercase;
+    a {
+        color: $white;
+    }
+    @include mq($until: tablet) {
+        font-size: 1.5rem;
+    }
+    @include mq(desktop) {
+        font-size: 3.5rem;
+    }
+}
+
+// Header Structure
+.c-header-left, .c-header-right {
+    @include inline-block(middle, 49%);
+}
+
+.c-header-right {
+    text-align: right;
 }

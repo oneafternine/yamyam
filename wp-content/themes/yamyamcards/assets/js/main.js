@@ -21,7 +21,7 @@ jQuery(function($){
     $('a.mailto').each(function() { mailto(this);});
 
     // Mobile Menu Trigger
-    $('.c-menu-trigger, .close-menu a').on('click', function(event){
+    $('.c-menu-trigger, .c-close-menu a').on('click', function(event){
         // $('body').toggleClass('no-scroll');
         $('.c-mobile-menu-container').toggleClass('active');
         event.preventDefault();
