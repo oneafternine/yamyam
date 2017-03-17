@@ -11,6 +11,11 @@
 
 <section class="c-home-carousel">
     <div class="o-container">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/carousel--placeholder.jpg" alt="homepage carousel placeholder">
+        <div class="owl-carousel owl-theme">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/carousel--placeholder.jpg" alt="homepage carousel placeholder" width="2000" height="780">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/carousel--placeholder1.jpg" alt="homepage carousel placeholder" width="2000" height="780">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/carousel--placeholder.jpg" alt="homepage carousel placeholder" width="2000" height="780">
+        </div>
+
     </div>
 </section>

@@ -33,5 +33,16 @@ jQuery(function($){
         event.preventDefault();
     });
 
+    // Owl Carousel
+    $('.owl-carousel').owlCarousel({
+        lazyLoad: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        items : 1,
+        loop: true,
+        singleItem: true,
+        dots: true
+    });
+
 
 });

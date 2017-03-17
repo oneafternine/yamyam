@@ -108,7 +108,6 @@ function yamyamcards_scripts() {
 
     // Montserrat
     wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
     // Main CSS
 	wp_enqueue_style( 'yamyamcards-style', get_template_directory_uri() . '/assets/css/style.css', [], uniqid(), 'all');
 
@@ -116,6 +115,8 @@ function yamyamcards_scripts() {
 	wp_enqueue_script( 'yamyamcards-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
     // Focus Fix
 	wp_enqueue_script( 'yamyamcards-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
+    // Owl JS
+    wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', [], uniqid(), 'all');
     // Main JS
     wp_enqueue_script( 'yamyamcards-main', get_template_directory_uri() . '/assets/js/main.js', [], uniqid(), 'all');
 
