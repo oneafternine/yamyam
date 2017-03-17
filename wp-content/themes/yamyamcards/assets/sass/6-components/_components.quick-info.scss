@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #QUICK INFO
+   ========================================================================== */
+
+.c-info-row {
+    text-align: center;
+}
+
+.c-info_item__title {
+    color: $grey;
+    @include mq($until: tablet) {
+        font-size: 0.85rem;
+    }
+    @include mq($until: desktop) {
+        font-size: 1rem;
+    }
+    @include mq(tablet) {
+        text-align: left;
+        @include inline-block(middle, 75%);
+        margin-bottom: 0;
+    }
+}
+
+.c-info_item__icon {
+    display: none;
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    @include mq(tablet) {
+        @include inline-block(middle, 18%);
+        margin-right: 4%;
+        text-align: left;
+        img {
+            width: 40px;
+        }
+    }
+    @include mq(desktop) {
+        img {
+            width: 80px;
+        }
+    }
+}

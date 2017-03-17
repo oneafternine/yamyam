@@ -5036,7 +5036,7 @@ label, .label {
   display: block; }
 
 input {
-  border: 1px solid #808080; }
+  border: 1px solid #9D979F; }
   input:focus {
     border: 1px solid #54777B;
     outline: none; }
@@ -5070,13 +5070,13 @@ input[type="number"], input[type="date"], input[type="month"], input[type="week"
 select {
   background: white;
   max-width: 600px;
-  color: #808080;
-  border: 1px solid #808080; }
+  color: #9D979F;
+  border: 1px solid #9D979F; }
 
 textarea {
   width: 100%;
   max-width: 600px;
-  border: 1px solid #808080;
+  border: 1px solid #9D979F;
   padding: 10px; }
 
 input[type="checkbox"] {
@@ -5117,7 +5117,7 @@ button[type="submit"], button[type="button"], button[type="reset"] {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  color: #000000;
+  color: #1D2C52;
   margin-bottom: 1em; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
@@ -5207,7 +5207,8 @@ html {
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased !important;
-  text-rendering: optimizeLegibility !important; }
+  text-rendering: optimizeLegibility !important;
+  color: #9D979F; }
 
 /* ==========================================================================
    #TABLES
@@ -5246,7 +5247,7 @@ a, :-moz-any-link:focus {
 blockquote {
   margin: 1em 0 2em 1em;
   padding-left: 2em;
-  border-left: 2px solid #808080; }
+  border-left: 2px solid #9D979F; }
 
 ul, ol, dl {
   margin: 1em 0 2em;
@@ -6405,6 +6406,53 @@ figcaption {
   text-align: right; }
 
 /* ==========================================================================
+   #QUICK INFO
+   ========================================================================== */
+.c-info-row {
+  text-align: center; }
+
+.c-info_item__title {
+  color: #9D979F; }
+  @media (max-width: 46.24em) {
+    .c-info_item__title {
+      font-size: 0.85rem; } }
+  @media (max-width: 61.24em) {
+    .c-info_item__title {
+      font-size: 1rem; } }
+  @media (min-width: 46.25em) {
+    .c-info_item__title {
+      text-align: left;
+      display: inline-block;
+      vertical-align: middle;
+      width: 75%;
+      margin-bottom: 0; } }
+
+.c-info_item__icon {
+  display: none; }
+  .c-info_item__icon img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+  @media (min-width: 46.25em) {
+    .c-info_item__icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 18%;
+      margin-right: 4%;
+      text-align: left; }
+      .c-info_item__icon img {
+        width: 40px; } }
+  @media (min-width: 61.25em) {
+    .c-info_item__icon img {
+      width: 80px; } }
+
+/* ==========================================================================
+   #HOMEPAGE CAROUSEL
+   ========================================================================== */
+.c-home-carousel {
+  margin-bottom: 2%; }
+
+/* ==========================================================================
    #CLEARFIX
    ========================================================================== */
 /**
@@ -7143,4 +7191,4 @@ figcaption {
   color: #000000 !important; }
 
 .u-text--grey {
-  color: #808080 !important; }
+  color: #9D979F !important; }

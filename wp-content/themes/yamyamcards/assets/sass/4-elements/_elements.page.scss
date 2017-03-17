@@ -20,4 +20,5 @@ html {
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
   @include fonts;
+  color: $grey;
 }
