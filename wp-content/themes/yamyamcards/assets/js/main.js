@@ -37,11 +37,12 @@ jQuery(function($){
     $('.owl-carousel').owlCarousel({
         lazyLoad: true,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 4000,
         items : 1,
         loop: true,
         singleItem: true,
-        dots: true
+        dots: true,
+        autoHeight: true
     });
 
 

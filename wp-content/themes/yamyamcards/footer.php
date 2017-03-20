@@ -13,9 +13,9 @@
 
 	</main><!-- #content -->
 
-</div><!-- #page -->
+    <?php get_template_part( 'template-parts/content', 'newsletter-signup' ); ?>
 
-<?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 
 </body>
 </html>

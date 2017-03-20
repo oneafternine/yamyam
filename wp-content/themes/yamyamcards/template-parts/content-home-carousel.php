@@ -11,11 +11,17 @@
 
 <section class="c-home-carousel">
     <div class="o-container">
-        <div class="owl-carousel owl-theme">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/carousel--placeholder.jpg" alt="homepage carousel placeholder" width="2000" height="780">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/carousel--placeholder1.jpg" alt="homepage carousel placeholder" width="2000" height="780">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/carousel--placeholder.jpg" alt="homepage carousel placeholder" width="2000" height="780">
-        </div>
-
+        <?php if( have_rows('carousel_item') ): ?>
+            <div class="owl-carousel owl-theme">
+            <?php while ( have_rows('carousel_item') ) : the_row(); ?>
+                <div>
+                    <a href="<?php the_sub_field('carousel_url'); ?>">
+                        <img src="<?php the_sub_field('carousel_image'); ?>" title="<?php the_sub_field('carousel_title'); ?>">
+                    </a>
+                </div>
+            <?php endwhile; ?>
+            </div>
+        <?php else: ?>
+        <?php endif; ?>
     </div>
 </section>

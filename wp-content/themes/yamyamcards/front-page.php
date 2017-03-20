@@ -16,6 +16,7 @@ get_header(); ?>
 
 	<main class="site-main" role="main">
         <div class="o-container o-row">
+            <!-- Product List -->
             <div class="c-home-product-list">
                 <?php
                 while ( have_posts() ) : the_post();
