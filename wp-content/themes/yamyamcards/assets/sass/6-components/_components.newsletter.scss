@@ -1,0 +1,79 @@
+/* ==========================================================================
+   #NEWSLETTER
+   ========================================================================== */
+
+.c-newsletter-block {
+    padding: 5%;
+    text-align: center;
+    @include mq(tablet) {
+        text-align: left;
+    }
+}
+
+.c-newsletter__image {
+    margin-bottom: 20px;
+    img {
+        display: block;
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include mq(tablet) {
+        margin-bottom: 0;
+        img {
+            width: 180px;
+            margin-left: 0;
+        }
+    }
+}
+
+.c-newsletter__title {
+    color: $white;
+    @include mq(tablet) {
+        font-size: 1.75rem;
+    }
+}
+
+.c-newsletter__description {
+    color: fade-out($white, 0.4);
+}
+
+//
+// Mailchimp form
+
+input[type="email"].form__field {
+    @include transition;
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    width: 300px;
+    font-weight: 400;
+    font-size: 140%;
+    &:focus {
+        outline: none;
+        border: none;
+        border-bottom: 6px solid white;
+    }
+}
+::-webkit-input-placeholder {
+    color: fade-out(white, 0.4);
+}
+::-moz-placeholder {
+    color: fade-out(white, 0.4);
+}
+:-ms-input-placeholder {
+    color: fade-out(white, 0.4);
+}
+:-moz-placeholder {
+    color: fade-out(white, 0.4);
+}
+
+input[type="submit"].form__btn {
+    background: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: $pink;
+    padding: 5px 20px;
+}

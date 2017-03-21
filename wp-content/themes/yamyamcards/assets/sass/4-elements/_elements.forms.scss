@@ -16,6 +16,7 @@ label, .label {
 
 input {
     border: 1px solid $grey;
+    font-family: Montserrat;
     &:focus {
         border: 1px solid $success;
         outline: none;
@@ -29,12 +30,12 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     height: $field-height-mobile;
     padding-left: 6px;
     &:focus {
-        background: lighten($warning, 30%);
+        border: 2px solid $warning;
     }
     @include mq(desktop) {
         height: $field-height-desk;
         padding-left: 10px;
-        &.filed--large {
+        &.field--large {
             height: $field-height-large;
         }
     }
@@ -44,7 +45,7 @@ input[type="number"], input[type="date"], input[type="month"], input[type="week"
     padding-left: 6px;
     height: $field-height-mobile;
     &:focus {
-        background: lighten($warning, 30%);
+        border: 2px solid $warning;
     }
     @include mq(desktop) {
         height: $field-height-desk;
