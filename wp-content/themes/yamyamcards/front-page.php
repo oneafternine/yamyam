@@ -10,14 +10,12 @@
 
 get_header(); ?>
 
-    <?php get_template_part( 'template-parts/content', 'quick-info' ); ?>
-
     <?php get_template_part( 'template-parts/content', 'home-carousel' ); ?>
 
 	<main class="site-main" role="main">
         <div class="o-container o-row">
             <!-- Product List -->
-            <div class="c-home-product-list">
+            <div class="o-list--product c-list--product--home">
                 <?php
                 while ( have_posts() ) : the_post();
                         the_content();

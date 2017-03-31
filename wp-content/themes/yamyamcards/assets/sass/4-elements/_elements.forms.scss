@@ -23,6 +23,10 @@ input {
     }
 }
 
+button {
+    font-family: Montserrat;
+}
+
 // Styles for fields (excluding buttons, checkboxes etc)
 input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="search"], input[type="url"], select {
     width: 100%;

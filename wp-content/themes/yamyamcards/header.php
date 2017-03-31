@@ -53,3 +53,5 @@
 	</header><!-- #masthead -->
 
 	<main id="content" class="site-content">
+        <?php get_template_part( 'template-parts/content', 'quick-info' ); ?>
+

@@ -5241,6 +5241,9 @@ input {
     border: 1px solid #54777B;
     outline: none; }
 
+button {
+  font-family: Montserrat; }
+
 input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="search"], input[type="url"], select {
   width: 100%;
   max-width: 600px;
@@ -5420,6 +5423,31 @@ table {
   width: 100%;
   /* [1] */ }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 4px;
+  font-size: 95%;
+  margin-bottom: 30px; }
+  table caption {
+    margin-bottom: 6px;
+    text-align: left;
+    font-size: 0.85em; }
+  table td {
+    padding: 10px;
+    vertical-align: center; }
+  table th {
+    font-weight: 700;
+    text-align: left;
+    background: #D8D8D8;
+    padding: 14px 10px;
+    vertical-align: center;
+    border-bottom: 2px solid #69D0CA;
+    color: #1D2C52; }
+  @media (min-width: 61.25em) {
+    table {
+      margin-bottom: 60px; } }
+
 /* ==========================================================================
    #TEXT ELEMENTS
    ========================================================================== */
@@ -5428,7 +5456,7 @@ p {
   line-height: 1.5em; }
 
 a {
-  color: #000000;
+  color: #1D2C52;
   text-decoration: underline;
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
@@ -5436,7 +5464,7 @@ a {
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out; }
   a:hover {
-    color: black; }
+    color: #10182c; }
   a:active {
     position: relative;
     top: 1px; }
@@ -5458,32 +5486,6 @@ ul, ol, dl {
     margin-bottom: 0.5em; }
   ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
     list-style-type: circle; }
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 4px;
-  font-size: 95%;
-  margin-bottom: 30px; }
-  table caption {
-    margin-bottom: 6px;
-    text-align: left;
-    font-size: 0.85em; }
-  table tr:nth-child(odd) td {
-    background: #F3F2ED; }
-  table td {
-    padding: 10px;
-    vertical-align: center; }
-  table th {
-    font-weight: 700;
-    text-align: left;
-    background: #69D0CA;
-    padding: 14px 10px;
-    vertical-align: center;
-    border-bottom: 2px solid #56cac3; }
-  @media (min-width: 61.25em) {
-    table {
-      margin-bottom: 60px; } }
 
 kbd, code, samp, pre {
   background: #F3F2ED;
@@ -6362,12 +6364,6 @@ figcaption {
     vertical-align: middle;
     width: 50%; } }
 /* ==========================================================================
-   #LIST-PRODUCT
-   ========================================================================== */
-/**
- * Default product list
- */
-/* ==========================================================================
    #BUTTONS
    ========================================================================== */
 /**
@@ -6616,15 +6612,13 @@ figcaption {
    ========================================================================== */
 .c-info-row {
   text-align: center; }
+  .c-info-row .o-row {
+    padding-top: 2%;
+    padding-bottom: 2%; }
 
 .c-info_item__title {
-  color: #9D979F; }
-  @media (max-width: 46.24em) {
-    .c-info_item__title {
-      font-size: 0.85rem; } }
-  @media (max-width: 61.24em) {
-    .c-info_item__title {
-      font-size: 1rem; } }
+  color: #9D979F;
+  font-size: 0.85rem; }
   @media (min-width: 46.25em) {
     .c-info_item__title {
       text-align: left;
@@ -6632,6 +6626,9 @@ figcaption {
       vertical-align: middle;
       width: 75%;
       margin-bottom: 0; } }
+  @media (min-width: 61.25em) {
+    .c-info_item__title {
+      font-size: 1rem; } }
 
 .c-info_item__icon {
   display: none; }
@@ -6649,8 +6646,10 @@ figcaption {
       .c-info_item__icon img {
         width: 40px; } }
   @media (min-width: 61.25em) {
-    .c-info_item__icon img {
-      width: 80px; } }
+    .c-info_item__icon {
+      width: 12%; }
+      .c-info_item__icon img {
+        width: 80px; } }
 
 /* ==========================================================================
    #HOMEPAGE CAROUSEL
@@ -6726,10 +6725,10 @@ input[type="email"].form__field {
   color: rgba(255, 255, 255, 0.6); }
 
 input[type="submit"].form__btn {
-  background: white;
+  background: #ffffff !important;
   border: 2px solid white;
   border-radius: 40px;
-  color: #FA2985;
+  color: #FA2985 !important;
   padding: 5px 20px; }
 
 /* ==========================================================================
@@ -7475,3 +7474,47 @@ input[type="submit"].form__btn {
 
 .u-text--grey {
   color: #9D979F !important; }
+
+/* ==========================================================================
+   #WOO COMMERCE OVERRIDES
+   ========================================================================== */
+/*
+** Woo Commerce Overrides
+*/
+@media (min-width: 46.25em) {
+  .woocommerce ul.products li.product h3 {
+    font-size: 1.75rem; } }
+
+.woocommerce ul.products li.product .price {
+  color: #69D0CA;
+  font-size: 1.25rem;
+  font-weight: 700; }
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  border-radius: 30px;
+  color: #9D979F; }
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: #69D0CA; }
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background-color: #32a19a; }
+
+.woocommerce div.product form.cart .button {
+  margin-left: 20px; }
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  font-size: 1.75rem;
+  font-weight: 700; }
+
+.shop_table a {
+  font-weight: 700; }
+
+/* ==========================================================================
+   #WOO COMMERCE OVERRIDES
+   ========================================================================== */
+/*
+** Owl Carousel Overrides
+*/
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #FA2985; }

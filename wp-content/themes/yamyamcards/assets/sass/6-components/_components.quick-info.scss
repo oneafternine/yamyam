@@ -4,21 +4,24 @@
 
 .c-info-row {
     text-align: center;
+    .o-row {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
 }
 
 .c-info_item__title {
     color: $grey;
-    @include mq($until: tablet) {
-        font-size: 0.85rem;
-    }
-    @include mq($until: desktop) {
-        font-size: 1rem;
-    }
+    font-size: 0.85rem;
     @include mq(tablet) {
         text-align: left;
         @include inline-block(middle, 75%);
         margin-bottom: 0;
     }
+    @include mq(desktop) {
+        font-size: 1rem;
+    }
+
 }
 
 .c-info_item__icon {
@@ -37,6 +40,7 @@
         }
     }
     @include mq(desktop) {
+        width: 12%;
         img {
             width: 80px;
         }

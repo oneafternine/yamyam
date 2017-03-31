@@ -1,0 +1,61 @@
+/* ==========================================================================
+   #WOO COMMERCE OVERRIDES
+   ========================================================================== */
+
+/*
+** Woo Commerce Overrides
+*/
+
+//
+// Product List
+
+// List item title
+.woocommerce ul.products li.product h3 {
+    @include mq(tablet) {
+        font-size: 1.75rem;
+    }
+}
+// List item price
+.woocommerce ul.products li.product .price {
+    color: $teal;
+    font-size: 1.25rem;
+    @include font-bold;
+}
+
+// Buttons - general
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    border-radius: 30px;
+    color: $grey;
+}
+// Buttons - alt
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: $teal;
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background-color: darken($teal, 20%);
+}
+
+
+//
+// Single product page
+
+// add to cart button
+.woocommerce div.product form.cart .button {
+    margin-left: 20px;
+}
+
+// price
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    font-size: 1.75rem;
+    @include font-bold;
+}
+
+//
+// Basket
+
+.shop_table {
+    a {
+        @include font-bold;
+    }
+}
+

@@ -7,5 +7,9 @@
  */
 
 .o-list--product {
-
+    @include mq(tablet) {
+        h3 {
+            font-size: 2rem;
+        }
+    }
 }

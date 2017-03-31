@@ -9,3 +9,38 @@
 table {
   width: 100%; /* [1] */
 }
+
+// Table
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 4px;
+    font-size: 95%;
+    margin-bottom: 30px;
+    caption {
+        margin-bottom: 6px;
+        text-align: left;
+        font-size: 0.85em;
+    }
+    tr:nth-child(odd) {
+        td {
+            // background: $off-white;
+        }
+    }
+    td {
+        padding: 10px;
+        vertical-align: center;
+    }
+    th {
+        @include font-bold;
+        text-align: left;
+        background: $grey--lighter;
+        padding: 14px 10px;
+        vertical-align: center;
+        border-bottom: 2px solid $teal;
+        color: $navy;
+    }
+    @include mq(desktop) {
+        margin-bottom: 60px;
+    }
+}

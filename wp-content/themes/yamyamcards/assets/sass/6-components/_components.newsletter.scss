@@ -71,9 +71,9 @@ input[type="email"].form__field {
 }
 
 input[type="submit"].form__btn {
-    background: white;
+    background: $white!important;
     border: 2px solid white;
     border-radius: 40px;
-    color: $pink;
+    color: $pink!important;
     padding: 5px 20px;
 }

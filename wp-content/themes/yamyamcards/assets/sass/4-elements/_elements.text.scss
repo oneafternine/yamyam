@@ -12,11 +12,11 @@ p {
 
 // Anchor tags
 a {
-    color: $black;
+    color: $navy;
     text-decoration: underline;
     @include transition;
     &:hover {
-        color: darken($black, 10%);
+        color: darken($navy, 10%);
     }
     &:active {
         position: relative;
@@ -45,40 +45,6 @@ ul, ol, dl {
     }
     ul, ol, dl {
         list-style-type: circle;
-    }
-}
-
-// Table
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 4px;
-    font-size: 95%;
-    margin-bottom: 30px;
-    caption {
-        margin-bottom: 6px;
-        text-align: left;
-        font-size: 0.85em;
-    }
-    tr:nth-child(odd) {
-        td {
-            background: $off-white;
-        }
-    }
-    td {
-        padding: 10px;
-        vertical-align: center;
-    }
-    th {
-        @include font-bold;
-        text-align: left;
-        background: $primary;
-        padding: 14px 10px;
-        vertical-align: center;
-        border-bottom: 2px solid $primary-darker;
-    }
-    @include mq(desktop) {
-        margin-bottom: 60px;
     }
 }
 
