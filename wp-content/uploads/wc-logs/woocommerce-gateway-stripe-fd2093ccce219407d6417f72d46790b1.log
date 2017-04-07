@@ -1,0 +1,290 @@
+04-01-2017 @ 22:43:55 - Info: Begin processing payment for order 67 for the amount of 11
+04-01-2017 @ 22:43:55 - charges request: Array
+(
+    [currency] => gbp
+    [amount] => 1100
+    [description] => Yam Yam Cards - Order 67
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_1A3u0gKu2hDEkIol1tpPOp1W
+)
+
+04-01-2017 @ 22:43:57 - Processing response: stdClass Object
+(
+    [id] => ch_1A3u0mKu2hDEkIolZjfipGQD
+    [object] => charge
+    [amount] => 1100
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1A3u0mKu2hDEkIolC953U9l1
+            [object] => balance_transaction
+            [amount] => 1100
+            [available_on] => 1491609600
+            [created] => 1491083036
+            [currency] => gbp
+            [description] => Yam Yam Cards - Order 67
+            [fee] => 52
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 52
+                            [application] => 
+                            [currency] => gbp
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 1048
+            [source] => ch_1A3u0mKu2hDEkIolZjfipGQD
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1A3u0mKu2hDEkIolZjfipGQD
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1491083036
+    [currency] => gbp
+    [customer] => 
+    [description] => Yam Yam Cards - Order 67
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1A3u0mKu2hDEkIolZjfipGQD/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1A3u0gKu2hDEkIolyNzVFYLr
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 5
+            [exp_year] => 2018
+            [fingerprint] => TQZUHHht617ikb3o
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => chris@oneafternine.co.uk
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+04-01-2017 @ 22:43:58 - Success: Stripe charge complete (Charge ID: ch_1A3u0mKu2hDEkIolZjfipGQD)
+04-01-2017 @ 23:02:03 - Info: Begin processing payment for order 68 for the amount of 8.5
+04-01-2017 @ 23:02:03 - charges request: Array
+(
+    [currency] => gbp
+    [amount] => 850
+    [description] => Yam Yam Cards - Order 68
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_1A3uI9Ku2hDEkIolds9gfGDo
+)
+
+04-01-2017 @ 23:02:05 - Processing response: stdClass Object
+(
+    [id] => ch_1A3uIKKu2hDEkIolJXaPxsjA
+    [object] => charge
+    [amount] => 850
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1A3uIKKu2hDEkIolUCuwQuE8
+            [object] => balance_transaction
+            [amount] => 850
+            [available_on] => 1491609600
+            [created] => 1491084124
+            [currency] => gbp
+            [description] => Yam Yam Cards - Order 68
+            [fee] => 45
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 45
+                            [application] => 
+                            [currency] => gbp
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 805
+            [source] => ch_1A3uIKKu2hDEkIolJXaPxsjA
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1A3uIKKu2hDEkIolJXaPxsjA
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1491084124
+    [currency] => gbp
+    [customer] => 
+    [description] => Yam Yam Cards - Order 68
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1A3uIKKu2hDEkIolJXaPxsjA/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1A3uI9Ku2hDEkIolEkLkIjcU
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 5
+            [exp_year] => 2018
+            [fingerprint] => TQZUHHht617ikb3o
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => chris@oneafternine.co.uk
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+04-01-2017 @ 23:02:07 - Success: Stripe charge complete (Charge ID: ch_1A3uIKKu2hDEkIolJXaPxsjA)

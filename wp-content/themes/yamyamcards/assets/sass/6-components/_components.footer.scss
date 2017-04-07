@@ -1,0 +1,36 @@
+/* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+
+#c-site-footer {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.c-terms {
+    font-size: 80%;
+    a {
+        color: $grey--dark;
+        text-decoration: none;
+        &:hover {
+            color: $navy;
+        }
+    }
+}
+
+.c-menu-footer {
+    @extend .o-list-bare;
+    li {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    a {
+        @include font-bold;
+        color: $grey;
+        text-decoration: none;
+        &:hover {
+            color: $navy;
+        }
+    }
+}

@@ -5934,9 +5934,10 @@ figcaption {
  * Strip list-like appearance from lists by removing their bullets, and any
  * indentation.
  */
-.o-list-bare {
+.o-list-bare, .c-menu-footer {
   list-style: none;
-  margin-left: 0; }
+  margin-left: 0;
+  padding-left: 0; }
 
 /* ==========================================================================
    #LIST-INLINE
@@ -6606,6 +6607,32 @@ figcaption {
 
 .c-header-right {
   text-align: right; }
+
+/* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+#c-site-footer {
+  padding-bottom: 5%;
+  text-align: center; }
+
+.c-terms {
+  font-size: 80%; }
+  .c-terms a {
+    color: #4A4A4A;
+    text-decoration: none; }
+    .c-terms a:hover {
+      color: #1D2C52; }
+
+.c-menu-footer li {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px; }
+.c-menu-footer a {
+  font-weight: 700;
+  color: #9D979F;
+  text-decoration: none; }
+  .c-menu-footer a:hover {
+    color: #1D2C52; }
 
 /* ==========================================================================
    #QUICK INFO
