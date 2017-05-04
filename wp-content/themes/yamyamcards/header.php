@@ -36,7 +36,7 @@
     <header class="c-site-header">
         <div class="o-container">
             <div class="c-header-left">
-                <h1 class="c-header__title"><a href="/">YamYam</a></h1>
+                <h1 class="c-header__title"><a href="/">YamYamCards</a></h1>
             </div>
             <div class="c-header-right">
                 <a class="c-menu-trigger" href="javascript:;"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
