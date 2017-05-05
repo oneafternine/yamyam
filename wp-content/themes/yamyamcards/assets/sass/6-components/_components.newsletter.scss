@@ -77,3 +77,13 @@ input[type="submit"].form__btn {
     color: $pink!important;
     padding: 5px 20px;
 }
+
+.form__label--email {
+    color: $white;
+    font-size: 110%;
+    @include font-bold;
+    @include mq(tablet) {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}

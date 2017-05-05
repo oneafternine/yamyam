@@ -6768,6 +6768,15 @@ input[type="submit"].form__btn {
   color: #FA2985 !important;
   padding: 5px 20px; }
 
+.form__label--email {
+  color: #ffffff;
+  font-size: 110%;
+  font-weight: 700; }
+  @media (min-width: 46.25em) {
+    .form__label--email {
+      display: inline-block;
+      margin-right: 10px; } }
+
 /* ==========================================================================
    #CLEARFIX
    ========================================================================== */

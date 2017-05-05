@@ -60,7 +60,7 @@ if ( $order ) : ?>
 		<div class="clear"></div>
 
         <div class="o-highlight-wrap">
-            <h2>How did we do? Your feedback is really important</h2>
+            <h3>How did we do? Your feedback is really important</h3>
             <?php echo do_shortcode( '[contact-form-7 id="69" title="Checkout feedback"]' ); ?>
         </div>
 

@@ -16,16 +16,16 @@
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/header_logo2x.png" alt="yamyam footer logo">
                 </div>
                 <div class="o-layout__item  u-1/1  u-3/4@tablet">
-                    <h3 class="c-newsletter__title">yamyam offers straight to your inbox!</h3>
+                    <h3 class="c-newsletter__title">yamyamcard offers straight to your inbox!</h3>
                     <p class="c-newsletter__description">Emails will only ever be about our awesome cards, and you can unsubscribe at any time</p>
-                    <div class="nesletter__form">
+                    <div class="newsletter__form">
                         <!-- Begin MailChimp Signup Form -->
                         <div id="mc_embed_signup">
                         <form action="//oneafternine.us15.list-manage.com/subscribe/post?u=f16e6027cdc1a835756dc172b&amp;id=6b9e624fbb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
 
                         <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address: </label>
+                            <label class="form__label--email" for="mce-EMAIL">Email Address: </label>
                             <input type="email" value="" name="EMAIL" class="required email form__field" id="mce-EMAIL">
                         </div>
                             <div id="mce-responses" class="clear">
