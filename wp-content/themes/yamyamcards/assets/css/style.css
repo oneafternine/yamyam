@@ -6365,6 +6365,16 @@ figcaption {
     vertical-align: middle;
     width: 50%; } }
 /* ==========================================================================
+   #HIGHLIGHT BOX
+   ========================================================================== */
+/**
+ * Highlight box styles - useful to give focus to an element wihtin a long page of content
+ */
+.o-highlight-wrap {
+  background: #efefef;
+  padding: 5%; }
+
+/* ==========================================================================
    #BUTTONS
    ========================================================================== */
 /**
