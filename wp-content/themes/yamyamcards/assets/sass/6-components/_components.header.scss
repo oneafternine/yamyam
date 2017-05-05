@@ -4,7 +4,6 @@
 
 .c-site-header {
     background-color: $teal;
-    background-image: url('../images/header_logo2x.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80px auto;
@@ -12,10 +11,14 @@
     padding-bottom: 5%;
     @include mq(tablet) {
         background-size: 100px auto;
+        background-image: url('../images/header_logo2x.png');
         padding-top: 3%;
         padding-bottom: 3%;
     }
     @include mq(desktop) {
+        background-size: 120px auto;
+    }
+    @include mq(wide) {
         background-size: 160px auto;
     }
 }
@@ -43,6 +46,9 @@
         font-size: 1.5rem;
     }
     @include mq(desktop) {
+        font-size: 3rem;
+    }
+    @include mq(wide) {
         font-size: 3.5rem;
     }
 }

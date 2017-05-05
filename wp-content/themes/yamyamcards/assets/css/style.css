@@ -6572,7 +6572,6 @@ figcaption {
    ========================================================================== */
 .c-site-header {
   background-color: #69D0CA;
-  background-image: url("../images/header_logo2x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80px auto;
@@ -6581,9 +6580,13 @@ figcaption {
   @media (min-width: 46.25em) {
     .c-site-header {
       background-size: 100px auto;
+      background-image: url("../images/header_logo2x.png");
       padding-top: 3%;
       padding-bottom: 3%; } }
   @media (min-width: 61.25em) {
+    .c-site-header {
+      background-size: 120px auto; } }
+  @media (min-width: 81.25em) {
     .c-site-header {
       background-size: 160px auto; } }
 
@@ -6607,6 +6610,9 @@ figcaption {
     .c-header__title {
       font-size: 1.5rem; } }
   @media (min-width: 61.25em) {
+    .c-header__title {
+      font-size: 3rem; } }
+  @media (min-width: 81.25em) {
     .c-header__title {
       font-size: 3.5rem; } }
 
