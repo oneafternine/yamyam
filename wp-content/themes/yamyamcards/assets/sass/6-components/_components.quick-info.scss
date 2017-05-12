@@ -4,6 +4,10 @@
 
 .c-info-row {
     text-align: center;
+    display: none;
+    @include mq(tablet) {
+        display: block;
+    }
     .o-row {
         padding-top: 2%;
         padding-bottom: 2%;
