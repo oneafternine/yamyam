@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #PRODUCT SINGLE PAGE
+   ========================================================================== */
+
+//
+//Lightbox overrides
+
+// override the default behavious for links to move on click
+div.pp_woocommerce .pp_close, div.pp_woocommerce a.pp_expand, div.pp_woocommerce a.pp_contract {
+    &:active {
+        position: absolute;
+        top: -.5em;
+        right: -.5em;
+    }
+}

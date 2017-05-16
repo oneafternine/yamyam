@@ -16,19 +16,19 @@
                 <div class="c-info_item__icon">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/head-small--yellow.png" width="80" height="80">
                 </div>
-                <h5 class="c-info_item__title">free UK postage on all orders over £10</h3>
+                <h5 class="c-info_item__title">Free UK postage on all orders over £10</h3>
             </div>
             <div class="c-info-row__item o-layout__item  u-1/1  u-1/3@tablet">
                 <div class="c-info_item__icon">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/head-small--pink.png" width="80" height="80">
                 </div>
-                <h5 class="c-info_item__title">get 12 cards for the price of 10</h3>
+                <h5 class="c-info_item__title">Get 12 cards for the price of 10</h3>
             </div>
             <div class="c-info-row__item o-layout__item  u-1/1  u-1/3@tablet">
                 <div class="c-info_item__icon">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/head-small--green.png" width="80" height="80">
                 </div>
-                <h5 class="c-info_item__title">designed &amp; printed in the UK</h3>
+                <h5 class="c-info_item__title">Designed &amp; printed in the UK</h3>
             </div>
         </div>
     </div>
