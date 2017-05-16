@@ -6788,6 +6788,14 @@ input[type="submit"].form__btn {
       margin-right: 10px; } }
 
 /* ==========================================================================
+   #PRODUCT SINGLE PAGE
+   ========================================================================== */
+div.pp_woocommerce .pp_close:active, div.pp_woocommerce a.pp_expand:active, div.pp_woocommerce a.pp_contract:active {
+  position: absolute;
+  top: -.5em;
+  right: -.5em; }
+
+/* ==========================================================================
    #CLEARFIX
    ========================================================================== */
 /**
