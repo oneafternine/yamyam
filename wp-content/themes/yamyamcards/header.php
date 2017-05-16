@@ -26,9 +26,9 @@
             <nav class="c-menu--mobile">
                 <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'c-menu--mobile__primary' ) ); ?>
                 <ul class="c-menu--mobile__secondary">
-                    <li><a href="">twitter</a></li>
-                    <li><a href="">instagram</a></li>
-                    <li><a href="">facebook</a></li>
+                    <!-- <li><a target="_blank" href="">twitter</a></li> -->
+                    <li><a target="_blank" href="https://instagram.com/yamyamcards">instagram</a></li>
+                    <!-- <li><a target="_blank" href="">facebook</a></li> -->
                 </ul>
             </nav>
         </div>
