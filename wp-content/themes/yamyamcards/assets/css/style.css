@@ -5291,7 +5291,7 @@ button[type="submit"], button[type="button"], button[type="reset"] {
   font-weight: bold;
   border: none;
   margin-bottom: 1%;
-  background: #69D0CA;
+  background: #7BCCC9;
   color: #ffffff;
   height: 34px;
   padding-left: 10px;
@@ -5320,7 +5320,7 @@ button[type="submit"], button[type="button"], button[type="reset"] {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  color: #1D2C52;
+  color: #1D2F50;
   margin-bottom: 1em; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
@@ -5442,8 +5442,8 @@ table {
     background: #D8D8D8;
     padding: 14px 10px;
     vertical-align: center;
-    border-bottom: 2px solid #69D0CA;
-    color: #1D2C52; }
+    border-bottom: 2px solid #7BCCC9;
+    color: #1D2F50; }
   @media (min-width: 61.25em) {
     table {
       margin-bottom: 60px; } }
@@ -5456,7 +5456,7 @@ p {
   line-height: 1.5em; }
 
 a {
-  color: #1D2C52;
+  color: #1D2F50;
   text-decoration: underline;
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
@@ -5464,7 +5464,7 @@ a {
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out; }
   a:hover {
-    color: #10182c; }
+    color: #0f192b; }
   a:active {
     position: relative;
     top: 1px; }
@@ -6374,6 +6374,13 @@ figcaption {
   background: #efefef;
   padding: 5%; }
 
+.o-img-container {
+  margin-bottom: 20px; }
+  .o-img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block; }
+
 /* ==========================================================================
    #BUTTONS
    ========================================================================== */
@@ -6478,7 +6485,7 @@ figcaption {
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  background: #FA2985;
+  background: #ED5385;
   color: #ffffff;
   max-height: 0;
   overflow: hidden; }
@@ -6571,7 +6578,7 @@ figcaption {
    #HEADER
    ========================================================================== */
 .c-site-header {
-  background-color: #69D0CA;
+  background-color: #7BCCC9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80px auto;
@@ -6637,7 +6644,7 @@ figcaption {
     color: #4A4A4A;
     text-decoration: none; }
     .c-terms a:hover {
-      color: #1D2C52; }
+      color: #1D2F50; }
 
 .c-menu-footer li {
   display: inline-block;
@@ -6648,7 +6655,7 @@ figcaption {
   color: #9D979F;
   text-decoration: none; }
   .c-menu-footer a:hover {
-    color: #1D2C52; }
+    color: #1D2F50; }
 
 /* ==========================================================================
    #QUICK INFO
@@ -6775,7 +6782,7 @@ input[type="submit"].form__btn {
   background: #ffffff !important;
   border: 2px solid white;
   border-radius: 40px;
-  color: #FA2985 !important;
+  color: #ED5385 !important;
   padding: 5px 20px; }
 
 .form__label--email {
@@ -7510,22 +7517,22 @@ div.pp_woocommerce .pp_close:active, div.pp_woocommerce a.pp_expand:active, div.
   background-color: #F3F2ED !important; }
 
 .u-bg--primary {
-  background-color: #69D0CA !important; }
+  background-color: #7BCCC9 !important; }
 
 .u-bg--secondary {
-  background-color: #FA2985 !important; }
+  background-color: #ED5385 !important; }
 
 .u-bg--tertiary {
   background-color: #FED707 !important; }
 
 .u-bg--pink {
-  background-color: #FA2985 !important; }
+  background-color: #ED5385 !important; }
 
 .u-text--primary {
-  color: #69D0CA !important; }
+  color: #7BCCC9 !important; }
 
 .u-text--secondary {
-  color: #FA2985 !important; }
+  color: #ED5385 !important; }
 
 .u-text--tertiary {
   color: #FED707 !important; }
@@ -7550,7 +7557,7 @@ div.pp_woocommerce .pp_close:active, div.pp_woocommerce a.pp_expand:active, div.
     font-size: 1.75rem; } }
 
 .woocommerce ul.products li.product .price {
-  color: #69D0CA;
+  color: #7BCCC9;
   font-size: 1.25rem;
   font-weight: 700; }
 
@@ -7559,10 +7566,10 @@ div.pp_woocommerce .pp_close:active, div.pp_woocommerce a.pp_expand:active, div.
   color: #9D979F; }
 
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
-  background-color: #69D0CA; }
+  background-color: #7BCCC9; }
 
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
-  background-color: #32a19a; }
+  background-color: #3fa29f; }
 
 .woocommerce div.product form.cart .button {
   margin-left: 20px; }
@@ -7581,4 +7588,4 @@ div.pp_woocommerce .pp_close:active, div.pp_woocommerce a.pp_expand:active, div.
 ** Owl Carousel Overrides
 */
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #FA2985; }
+  background: #ED5385; }

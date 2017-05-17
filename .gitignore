@@ -3,3 +3,5 @@ config.codekit
 .sass-cache
 *.css.map
 *config.codekit3
+
+wp-content/uploads
