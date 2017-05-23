@@ -34,15 +34,18 @@ jQuery(function($){
     });
 
     // Owl Carousel
-    $('.owl-carousel').owlCarousel({
-        lazyLoad: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        items : 1,
-        loop: true,
-        singleItem: true,
-        dots: true,
-        autoHeight: true
+
+    $(window).on("load", function() {
+        $('.owl-carousel').owlCarousel({
+            lazyLoad: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            items : 1,
+            loop: true,
+            singleItem: true,
+            dots: true,
+            autoHeight: true
+        });
     });
 
 
