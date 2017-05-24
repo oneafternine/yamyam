@@ -37,7 +37,7 @@
                 <ul class="c-menu--mobile__secondary">
                     <li><a target="_blank" href="https://twitter.com/yamyamcards">twitter</a></li>
                     <li><a target="_blank" href="https://instagram.com/yamyamcards">instagram</a></li>
-                    <li><a target="_blank" href="fb.me/yamyamcards">facebook</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/yamyamcards/">facebook</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,7 +54,7 @@
                     <ul class="c-menu-secondary">
                     <li><a target="_blank" href="https://twitter.com/yamyamcards">twitter</a></li>
                     <li><a target="_blank" href="https://instagram.com/yamyamcards">instagram</a></li>
-                    <li><a target="_blank" href="fb.me/yamyamcards">facebook</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/yamyamcards/">facebook</a></li>
                     </ul>
                 </nav><!-- #site-navigation -->
             </div>
