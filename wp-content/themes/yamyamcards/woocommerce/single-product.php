@@ -21,6 +21,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
+<script>
+fbq('track', 'ViewContent', {
+value: 2.50,
+currency: 'GBP'
+});
+</script>
+<script>
+fbq('track', 'AddToCart', {
+value: 2.50,
+currency: 'GBP'
+});
+</script>
+
+
 
     <div class="o-container">
 
