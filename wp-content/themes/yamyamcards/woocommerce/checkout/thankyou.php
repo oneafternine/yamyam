@@ -20,13 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-<script>
-fbq('track', 'Purchase', {
-currency: 'GBP'
-});
-</script>
-
-
 if ( $order ) : ?>
 
 	<?php if ( $order->has_status( 'failed' ) ) : ?>
